@@ -24,7 +24,9 @@
 | links wan 4 |  /30  | 2^2 =  4 | 200.200.14.236 | 255.255.255.252 | 200.200.14.239 | 2001:DB8:ACAD:0EFF::3:0/112 |
 | links wan 5 |  /30  | 2^2 =  4 | 200.200.14.240 | 255.255.255.252 | 200.200.14.243 | 2001:DB8:ACAD:0EFF::4:0/112 |
 
+---
 
+## Tarefa 2: Endereçamento de Dispositivos
 
 | Dispositivo           | Interface | IPv4           | IPv4 - Máscara  | IPv4 - Gateway | IPv6/Prefixo                | IPv6 - Gateway        |
 | --------------------- | --------- | -------------- | --------------- | :------------: | :-------------------------- | :-------------------: |
@@ -164,5 +166,6 @@
 - [ ] ![Switch Pato Branco](sw-pb-pc.pkt)
 - [ ] ![Switch Francisco Beltrão](sw-fb-pc.pkt)
 - [ ] ![Switch Coronel Vivida](sw-cv-pc.pkt)
+
 
 
