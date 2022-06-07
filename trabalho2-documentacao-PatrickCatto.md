@@ -161,7 +161,9 @@
 
 <details>
     <summary>Roteador Pato Branco <a href="r-pb-pc.txt">Abrir config.</a></summary>
+
 ```
+
 enable
 conf t
 hostname r-pb-pc
@@ -229,12 +231,12 @@ banner motd $	------------------------------------------------------------------
 -------------------------------------------------------------------------------------------$
 exit
 wr
-
 ```
 </details>
 
 <details>
     <summary>Roteador Francisco Beltrão <a href="r-fb-pc.txt">Abrir config.</a></summary>
+
 ```
 enable
 conf t
@@ -308,6 +310,7 @@ wr
 
 <details>
     <summary>Roteador Vitorino <a href="r-vit-pc.txt">Abrir config.</a></summary>
+
 ```
 enable
 conf t
@@ -375,6 +378,7 @@ wr
 
 <details>
     <summary>Roteador Itapejara D'Oeste <a href="r-ita-pc.txt">Abrir config.</a></summary>
+
 ```
 enable
 conf t
@@ -447,6 +451,7 @@ wr
 
 <details>
     <summary>Roteador Coronel Vivida <a href="r-cv-pc.txt">Abrir config.</a></summary>
+    
 ```
 enable
 conf t
