@@ -28,30 +28,30 @@
 
 ## Tarefa 2: Endereçamento de Dispositivos
 
-| Dispositivo           | Interface | IPv4           | IPv4 - Máscara  | IPv4 - Gateway | IPv6/Prefixo                | IPv6 - Gateway        |
-| --------------------- | --------- | -------------- | --------------- | :------------: | :-------------------------- | :-------------------: |
-| PC1                   | NIC       | 200.200.14.3   | 255.255.255.192 | 200.200.14.1   | 2001:DB8:ACAD:0E00::3/64    | 2001:DB8:ACAD:0E00::1 |
-| PC2                   | NIC       | 200.200.14.4   | 255.255.255.192 | 200.200.14.1   | 2001:DB8:ACAD:0E00::4/64    | 2001:DB8:ACAD:0E00::1 |
-| PC3                   | NIC       | 200.200.14.67  | 255.255.255.224 | 200.200.14.65  | 2001:DB8:ACAD:0E01::3/64    | 2001:DB8:ACAD:0E01::1 |
-| PC4                   | NIC       | 200.200.14.68  | 255.255.255.224 | 200.200.14.65  | 2001:DB8:ACAD:0E01::4/64    | 2001:DB8:ACAD:0E01::1 |
-| PC5                   | NIC       | 200.200.14.99  | 255.255.255.224 | 200.200.14.97  | 2001:DB8:ACAD:0E02::3/64    | 2001:DB8:ACAD:0E02::1 |
-| PC6                   | NIC       | 200.200.14.100 | 255.255.255.224 | 200.200.14.97  | 2001:DB8:ACAD:0E02::4/64    | 2001:DB8:ACAD:0E02::1 |
-| Switch-Matriz         | SVI       | 200.200.14.2   | 255.255.255.192 | 200.200.14.1   | -                           | -                     |
-| Switch-Filial1        | SVI       | 200.200.14.66  | 255.255.255.224 | 200.200.14.65  | -                           | -                     |
-| Switch-Filial2        | SVI       | 200.200.14.98  | 255.255.255.224 | 200.200.14.97  | -                           | -                     |
-| Roteador-Pato Branco  | Fa0/0     | 200.200.14.1   | 255.255.255.192 | -              | 2001:DB8:ACAD:0E00::1/64    | -                     |
-| Roteador-Pato Branco  | Se0/0/0   | 200.200.14.225 | 255.255.255.252 | -              | 2001:DB8:ACAD:0EFF::1/112   | -                     |
-| Roteador-Pato Branco  | Se0/0/1   | 200.200.14.238 | 255.255.255.252 | -              | 2001:DB8:ACAD:0EFF::3:2/112 | -                     |
-| Roteador-Fco. Beltrão | Fa0/0     | 200.200.14.65  | 255.255.255.224 | -              | 2001:DB8:ACAD:0E01::1/64    | -                     |
-| Roteador-Fco. Beltrão | Se0/0/0   | 200.200.14.233 | 255.255.255.252 | -              | 2001:DB8:ACAD:0EFF::2:1/112 | -                     |
-| Roteador-Fco. Beltrão | Se0/0/1   | 200.200.14.230 | 255.255.255.252 | -              | 2001:DB8:ACAD:0EFF::1:2/112 | -                     |
-| Roteador-Vitorino     | Se0/0/0   | 200.200.14.229 | 255.255.255.252 | -              | 2001:DB8:ACAD:0EFF::1:1/112 | -                     |
-| Roteador-Vitorino     | Se0/0/1   | 200.200.14.226 | 255.255.255.252 | -              | 2001:DB8:ACAD:0EFF::2/112   | -                     |
-| Roteador-Itapejara    | Se0/0/0   | 200.200.14.237 | 255.255.255.252 | -              | 2001:DB8:ACAD:0EFF::3:1/112 | -                     |
-| Roteador-Itapejara    | Se0/0/1   | 200.200.14.234 | 255.255.255.252 | -              | 2001:DB8:ACAD:0EFF::2:2/112 | -                     |
-| Roteador-Itapejara    | Fa0/1     | 200.200.14.241 | 255.255.255.252 | -              | 2001:DB8:ACAD:0EFF::4:1/112 | -                     |
-| Roteador-Coronel      | Fa0/0     | 200.200.14.97  | 255.255.255.224 | -              | 2001:DB8:ACAD:0E02::1/64    | -                     |
-| Roteador-Coronel      | Fa0/1     | 200.200.14.242 | 255.255.255.252 | -              | 2001:DB8:ACAD:0EFF::4:2/112 | -                     |
+| Dispositivo           | Interface | IPv4           | IPv4 - Máscara  | IPv4 - Gateway |        IPv6/Prefixo         |    IPv6 - Gateway     |
+| --------------------- | --------- | -------------- | --------------- | :------------: | :-------------------------: | :-------------------: |
+| PC1                   | NIC       | 200.200.14.3   | 255.255.255.192 |  200.200.14.1  |  2001:DB8:ACAD:0E00::3/64   | 2001:DB8:ACAD:0E00::1 |
+| PC2                   | NIC       | 200.200.14.4   | 255.255.255.192 |  200.200.14.1  |  2001:DB8:ACAD:0E00::4/64   | 2001:DB8:ACAD:0E00::1 |
+| PC3                   | NIC       | 200.200.14.67  | 255.255.255.224 | 200.200.14.65  |  2001:DB8:ACAD:0E01::3/64   | 2001:DB8:ACAD:0E01::1 |
+| PC4                   | NIC       | 200.200.14.68  | 255.255.255.224 | 200.200.14.65  |  2001:DB8:ACAD:0E01::4/64   | 2001:DB8:ACAD:0E01::1 |
+| PC5                   | NIC       | 200.200.14.99  | 255.255.255.224 | 200.200.14.97  |  2001:DB8:ACAD:0E02::3/64   | 2001:DB8:ACAD:0E02::1 |
+| PC6                   | NIC       | 200.200.14.100 | 255.255.255.224 | 200.200.14.97  |  2001:DB8:ACAD:0E02::4/64   | 2001:DB8:ACAD:0E02::1 |
+| Switch-Matriz         | SVI       | 200.200.14.2   | 255.255.255.192 |  200.200.14.1  |              -              |           -           |
+| Switch-Filial1        | SVI       | 200.200.14.66  | 255.255.255.224 | 200.200.14.65  |              -              |           -           |
+| Switch-Filial2        | SVI       | 200.200.14.98  | 255.255.255.224 | 200.200.14.97  |              -              |           -           |
+| Roteador-Pato Branco  | Fa0/0     | 200.200.14.1   | 255.255.255.192 |       -        |  2001:DB8:ACAD:0E00::1/64   |           -           |
+| Roteador-Pato Branco  | Se0/0/0   | 200.200.14.225 | 255.255.255.252 |       -        |  2001:DB8:ACAD:0EFF::1/112  |           -           |
+| Roteador-Pato Branco  | Se0/0/1   | 200.200.14.238 | 255.255.255.252 |       -        | 2001:DB8:ACAD:0EFF::3:2/112 |           -           |
+| Roteador-Fco. Beltrão | Fa0/0     | 200.200.14.65  | 255.255.255.224 |       -        |  2001:DB8:ACAD:0E01::1/64   |           -           |
+| Roteador-Fco. Beltrão | Se0/0/0   | 200.200.14.233 | 255.255.255.252 |       -        | 2001:DB8:ACAD:0EFF::2:1/112 |           -           |
+| Roteador-Fco. Beltrão | Se0/0/1   | 200.200.14.230 | 255.255.255.252 |       -        | 2001:DB8:ACAD:0EFF::1:2/112 |           -           |
+| Roteador-Vitorino     | Se0/0/0   | 200.200.14.229 | 255.255.255.252 |       -        | 2001:DB8:ACAD:0EFF::1:1/112 |           -           |
+| Roteador-Vitorino     | Se0/0/1   | 200.200.14.226 | 255.255.255.252 |       -        |  2001:DB8:ACAD:0EFF::2/112  |           -           |
+| Roteador-Itapejara    | Se0/0/0   | 200.200.14.237 | 255.255.255.252 |       -        | 2001:DB8:ACAD:0EFF::3:1/112 |           -           |
+| Roteador-Itapejara    | Se0/0/1   | 200.200.14.234 | 255.255.255.252 |       -        | 2001:DB8:ACAD:0EFF::2:2/112 |           -           |
+| Roteador-Itapejara    | Fa0/1     | 200.200.14.241 | 255.255.255.252 |       -        | 2001:DB8:ACAD:0EFF::4:1/112 |           -           |
+| Roteador-Coronel      | Fa0/0     | 200.200.14.97  | 255.255.255.224 |       -        |  2001:DB8:ACAD:0E02::1/64   |           -           |
+| Roteador-Coronel      | Fa0/1     | 200.200.14.242 | 255.255.255.252 |       -        | 2001:DB8:ACAD:0EFF::4:2/112 |           -           |
 
 ---
 
@@ -158,14 +158,14 @@
 
 
 ## Arquivos de Configuração dos Dispositivos Intermediários (roteadores e switches)
-- [ ] ![Roteador Pato Branco](r-pb-pc.pkt)
-- [ ] ![Roteador Francisco Beltrão](r-fb-pc.pkt)
-- [ ] ![Roteador Vitorino](r-vit-pc.pkt)
-- [ ] ![Roteador Itapejara D'Oeste](r-ita-pc.pkt)
-- [ ] ![Roteador Coronel Vivida](r-cv-pc.pkt)
-- [ ] ![Switch Pato Branco](sw-pb-pc.pkt)
-- [ ] ![Switch Francisco Beltrão](sw-fb-pc.pkt)
-- [ ] ![Switch Coronel Vivida](sw-cv-pc.pkt)
+- [ ] ![Roteador Pato Branco](r-pb-pc.txt)
+- [ ] ![Roteador Francisco Beltrão](r-fb-pc.txt)
+- [ ] ![Roteador Vitorino](r-vit-pc.txt)
+- [ ] ![Roteador Itapejara D'Oeste](r-ita-pc.txt)
+- [ ] ![Roteador Coronel Vivida](r-cv-pc.txt)
+- [ ] ![Switch Pato Branco](sw-pb-pc.txt)
+- [ ] ![Switch Francisco Beltrão](sw-fb-pc.txt)
+- [ ] ![Switch Coronel Vivida](sw-cv-pc.txt)
 
 
 

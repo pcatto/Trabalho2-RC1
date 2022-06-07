@@ -1,0 +1,68 @@
+enable
+conf t
+hostname r-pb-pc
+ipv6 unicast-routing
+interface Se0/0/0
+description pb-vit
+clock rate 56000
+ip address 200.200.14.225 255.255.255.252
+ipv6 address 2001:DB8:ACAD:0EFF::1/112
+ipv6 enable
+no shutdown
+exit
+interface Se0/0/1
+description ita-pb
+ip address 200.200.14.238 255.255.255.252
+ipv6 address 2001:DB8:ACAD:0EFF::3:2/112
+ipv6 enable
+no shutdown
+exit
+interface fa0/0
+description Matriz
+ip address 200.200.14.1 255.255.255.192
+ipv6 address 2001:DB8:ACAD:0E00::1/64
+ipv6 address FE80::1 link-local
+ipv6 enable
+no shutdown
+exit
+ip route 200.200.14.64 255.255.255.224 200.200.14.226
+ip route 200.200.14.96 255.255.255.224 200.200.14.226
+ip route 200.200.14.228 255.255.255.252 200.200.14.226
+ip route 200.200.14.232 255.255.255.252 200.200.14.226
+ip route 200.200.14.240 255.255.255.252 200.200.14.226
+ipv6 route 2001:DB8:ACAD:0E01::/64 2001:DB8:ACAD:0EFF::2
+ipv6 route 2001:DB8:ACAD:0E02::/64 2001:DB8:ACAD:0EFF::2
+ipv6 route 2001:DB8:ACAD:0EFF::1:0/112 2001:DB8:ACAD:0EFF::2
+ipv6 route 2001:DB8:ACAD:0EFF::2:0/112 2001:DB8:ACAD:0EFF::2
+ipv6 route 2001:DB8:ACAD:0EFF::4:0/112 2001:DB8:ACAD:0EFF::2
+security passwords min-length 10
+login block-for 120 attempts 3 within 60
+service password-encryption
+ip domain name patrick.catto.com.br
+crypto key generate rsa general-keys modulus 1024
+username patrick secret ssh@Network1ng
+line vty 0 15
+exec-timeout 5
+login local
+transport input ssh 
+exit
+line con 0
+exec-timeout 5
+exit
+enable secret @dmin-patrick
+line con 0
+password @Cons-patrick
+login
+exit
+banner motd $	-------------------------------------------------------------------------------------------
+|                                                                                          |
+|                         Roteador Pato Branco                                             |
+|                                                                                          |
+|               ATENCAO Acesso Restrito a pessoas autorizadas!                             |
+|                                                                                          |
+|         Administrador: PATRICK CATTO (catto@alunos.utfpr.edu.br)                         |
+|                                                                                          |
+-------------------------------------------------------------------------------------------$
+exit
+wr
+

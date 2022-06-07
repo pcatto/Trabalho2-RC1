@@ -1,0 +1,11 @@
+enable
+conf t
+hostname sw-matriz-pc
+ip default-gateway 200.200.14.1
+interface vlan1
+description Matriz
+ip address 200.200.14.2 255.255.255.192
+no shutdown
+exit
+exit
+wr
