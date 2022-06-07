@@ -451,7 +451,7 @@ wr
 
 <details>
     <summary>Roteador Coronel Vivida <a href="r-cv-pc.txt">Abrir config.</a></summary>
-    
+
 ```
 enable
 conf t
@@ -517,10 +517,63 @@ wr
 ```
 </details>
 
+<details>
+    <summary>Switch Pato Branco <a href="sw-pb-pc.txt">Abrir config.</a></summary>
+    
+```
+enable
+conf t
+hostname sw-matriz-pc
+ip default-gateway 200.200.14.1
+interface vlan1
+description Matriz
+ip address 200.200.14.2 255.255.255.192
+no shutdown
+exit
+exit
+wr
 
-- [ ] ![Switch Pato Branco](sw-pb-pc.txt)
-- [ ] ![Switch Francisco Beltrão](sw-fb-pc.txt)
-- [ ] ![Switch Coronel Vivida](sw-cv-pc.txt)
+```
+</details>
+
+<details>
+    <summary>Switch Francisco Beltrão <a href="sw-fb-pc.txt">Abrir config.</a></summary>
+    
+```
+enable
+conf t
+hostname sw-filial1-pc
+ip default-gateway 200.200.14.65
+interface vlan1
+description Filial_1
+ip address 200.200.14.66 255.255.255.224
+no shutdown
+exit
+exit
+wr
+
+```
+</details>
+
+<details>
+    <summary>Switch Coronel Vivida <a href="sw-cv-pc.txt">Abrir config.</a></summary>
+    
+```
+enable
+conf t
+hostname sw-filial2-pc
+ip default-gateway 200.200.14.97
+interface vlan1
+description Filial_2
+ip address 200.200.14.98 255.255.255.224
+no shutdown
+exit
+exit
+wr
+
+
+```
+</details>
 
 
 
